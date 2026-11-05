@@ -1,0 +1,150 @@
+.content {
+    min-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    color: #ECD9FA;
+}
+
+/* left part */
+
+.left-content {
+    flex: 0 0 clamp(260px, 25%, 340px);   /* ni moins de 260px, ni plus de 340px */
+    border-right: 1px solid #54346B;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.name {
+    font-size: clamp(48px, 26.5px + 2.68vw, 65px);
+    line-height: 0.95;
+    font-weight: 300;
+    margin: 0;
+}
+
+.bio {
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 60ch;
+    color: #D19DFF;
+}
+
+.bio:not(:first-of-type) {
+    margin-top: 12px;
+}
+
+.title {
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 60ch;
+    color: #D19DFF;
+}
+
+.mobility {
+    margin-bottom: 12px;
+}
+
+.cv-button {
+    display: flex;
+    justify-content: space-between;   /* texte à gauche, icône à droite */
+    align-items: center;
+    width: calc(100% - 32px);
+    padding: 14px 16px;
+    background-color: #8E4EC6;
+    color: #ECD9FA;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color .15s;
+    margin-top: auto;
+}
+
+.cv-button:hover {
+    background-color: #9A5CD0;        /* « hovered solid background » de ta palette */
+}
+
+.cv-button:active {
+    background-color: #8457AA;
+}
+
+.cv-button:focus-visible {
+    outline: 2px solid #D19DFF;
+    outline-offset: 2px;
+}
+
+
+/* right part */
+
+.right-content {
+    flex: 1;                               /* prend tout le reste */
+    min-width: 0;
+    padding: 28px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* for phones */
+
+@media (max-width: 800px) {
+    .content {
+        flex-direction: column;
+        overflow-y: auto;          /* c'est toute la zone qui défile maintenant */
+    }
+
+    .left-content {
+        flex: none;                /* annule le clamp, la hauteur suit le contenu */
+        border-right: none;
+        border-bottom: 1px solid #54346B;
+        overflow-y: visible;
+        padding: 20px;
+    }
+
+    .right-content {
+        flex: none;
+        overflow-y: visible;
+        padding: 20px;
+    }
+}
+
+/* écrans peu hauts (PC portables) : colonne de gauche plus compacte */
+@media (max-height: 860px) and (min-width: 801px) {
+    .left-content {
+        padding: 20px 28px;
+    }
+
+    .right-content {
+        padding: 20px 28px;
+    }
+
+    .name {
+        font-size: clamp(36px, 6vh, 52px);
+    }
+
+    .separator {
+        margin: 10px 0;
+    }
+
+    .bio,
+    .title {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .cv-button {
+        padding: 10px 16px;
+    }
+}
+
+/* écrans très peu hauts */
+@media (max-height: 640px) and (min-width: 801px) {
+    .name {
+        font-size: 32px;
+    }
+
+    .separator {
+        margin: 8px 0;
+    }
+}

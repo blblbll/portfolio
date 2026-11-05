@@ -1,0 +1,116 @@
+{
+    "fr": {
+        "journey": "Parcours",
+        "education": "Formations",
+        "internships": "Expériences",
+        "educationItems": [
+            {
+                "name": "BUT Informatique",
+                "info": "IUT de Lens · 2025-2028"
+            },
+            {
+                "name": "Epitech projet grande école",
+                "info": "Epitech Lille · 2022-2024"
+            },
+            {
+                "name": "Baccalauréat spécialité maths et NSI",
+                "info": "Lycée Saint-Luc Cambrai · 2022"
+            }
+        ],
+        "internshipItems": [
+            {
+                "name": "Stage · Développeuse fullstack",
+                "info": "ARD-COM · Août 2023-Janvier 2024"
+            }
+        ],
+        "projects": "Projets",
+        "projectsLink": "Voir le code",
+        "projectItems": [
+            {
+                "name": "FractaLens",
+                "info": "Générateur d'images fractales réalisé en Java.",
+                "image": "Fractalens.gif",
+                "hover": "Travail de groupe réalisé à 4 en Java en 2026. C'est un générateur d'images et de gifs fractals. Réalisé grâce à des patrons de conception, il est possible de changer le type de fractale, les couleurs, le zoom, la position, etc.",
+                "link": "https://github.com/blblbll/FractaLens"
+            },
+            {
+                "name": "My RPG",
+                "info": "RPG réalisé en C.",
+                "image": "rpg.gif",
+                "hover": "Travail de groupe réalisé à 4 en C en 2023. C'est un jeu vidéo dans lequel le joueur incarne un personnage et doit se déplacer dans un monde 2D, combattre des ennemis et collecter des objets. Le jeu est réalisé en C avec la librairie CSFML.",
+                "link": "https://github.com/blblbll/rpg"
+            },
+            {
+                "name": "Sokoban",
+                "info": "Jeu de logique réalisé en C (ncurses).",
+                "image": "sokoban.gif",
+                "hover": "Travail individuel réalisé en C en 2022. C'est un jeu de logique dans lequel le joueur doit déplacer des caisses pour les placer sur des emplacements spécifiques, la carte est customisable. Le jeu est réalisé en C avec la librairie ncurses.",
+                "link": "https://github.com/blblbll/sokoban"
+            },
+            {
+                "name": "Portfolio",
+                "info": "Portfolio réalisé en React.",
+                "image": "portfolio.jpg",
+                "hover": "Travail individuel réalisé en React en 2026. C'est un portfolio web pour présenter mes projets et compétences. Le site est réalisé avec React et utilise des bibliothèques comme Radix pour les composants.",
+                "link": "https://github.com/blblbll/portfolio"
+            }
+        ]
+    },
+    "en": {
+        "journey": "Background",
+        "education": "Education",
+        "internships": "Experience",
+        "educationItems": [
+            {
+                "name": "BUT in Computer Science",
+                "info": "IUT de Lens · 2025-2028"
+            },
+            {
+                "name": "Epitech, Grande École program",
+                "info": "Epitech Lille · 2022-2024"
+            },
+            {
+                "name": "Baccalauréat (French high school diploma), Maths and Computer Science",
+                "info": "Lycée Saint-Luc, Cambrai · 2022"
+            }
+        ],
+        "internshipItems": [
+            {
+                "name": "Internship · Full-stack developer",
+                "info": "ARD-COM · August 2023 - January 2024"
+            }
+        ],
+        "projects": "Projects",
+        "projectsLink": "See the code",
+        "projectItems": [
+            {
+                "name": "FractaLens",
+                "info": "Fractal image generator built in Java.",
+                "image": "Fractalens.gif",
+                "hover": "Group project for 4 people, built in Java in 2026. It is a fractal image and GIF generator. Built using design patterns, it lets you change the fractal type, colors, zoom, position, etc.",
+                "link": "https://github.com/blblbll/FractaLens"
+            },
+            {
+                "name": "My RPG",
+                "info": "RPG built in C.",
+                "image": "rpg.gif",
+                "hover": "Group project for 4 people, built in C in 2023. It is a video game in which the player controls a character who moves through a 2D world, fights enemies and collects items. The game is built in C with the CSFML library.",
+                "link": "https://github.com/blblbll/rpg"
+            },
+            {
+                "name": "Sokoban",
+                "info": "Logic puzzle game built in C (ncurses).",
+                "image": "sokoban.gif",
+                "hover": "Solo project built in C in 2022. It is a logic game in which the player must push boxes onto specific spots, the map is customizable. The game is built in C with the ncurses library.",
+                "link": "https://github.com/blblbll/sokoban"
+            },
+            {
+                "name": "Portfolio",
+                "info": "Portfolio built in React.",
+                "image": "portfolio.jpg",
+                "hover": "Solo project built with React in 2026. It is a web portfolio to showcase my projects and skills. The site is built with React and uses libraries such as Radix for the components.",
+                "link": "https://github.com/blblbll/portfolio"
+            }
+        ]
+    }
+}

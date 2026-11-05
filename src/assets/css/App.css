@@ -1,0 +1,87 @@
+html {
+    background-color: #1E1523;
+    font-family: 'Inter', sans-serif;
+}
+
+strong {
+    color: #ECD9FA;
+}
+
+.selected-elem {
+    color: #ECD9FA;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #8E4EC6;
+    cursor: default;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    width: fit-content;
+}
+
+a:hover {
+    color: #ECD9FA;
+}
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.side-elem {
+    margin: 0;
+    color: #D19DFF;
+    background-color: #301C3B;
+    border: 1px solid #54346B;
+}
+
+.clickable {
+    cursor: pointer;
+    transition: background-color .15s, border-color .15s, color .15s;
+}
+
+.clickable:hover {
+    background-color: #3D224E;
+    border-color: #8457AA;
+    color: #ECD9FA;
+}
+
+.clickable:active {
+    background-color: #48295C;
+}
+
+.clickable:focus-visible {
+    outline: 2px solid #664282;
+    outline-offset: 2px;
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.separator {
+    background-color: #54346B;
+    height: 1px;
+    width: 100%;
+    flex-shrink: 0;       /* évite qu'il soit écrasé dans la colonne flex */
+    margin: 16px 0;       /* l'espace autour du trait */
+}

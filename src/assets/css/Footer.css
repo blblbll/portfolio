@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 28px;
+}
+
+.footer-elem {
+    margin-right: 6px;
+    margin-left: 6px;
+}

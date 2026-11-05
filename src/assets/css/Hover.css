@@ -1,0 +1,106 @@
+.hover-trigger:hover {
+    color: #ECD9FA;
+}
+
+.hover-content {
+    max-width: 280px;
+    padding: 14px 16px;
+    background-color: #1E1523;
+    border: 1px solid #54346B;
+    border-top: 2px solid #8E4EC6;          /* liseré d'accent en haut */
+    color: #D19DFF;
+    font-size: 13px;
+    line-height: 1.55;
+    z-index: 10;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, .45);
+    animation: hover-in .18s ease-out;
+}
+
+/* le premier paragraphe = titre de la compétence */
+.hover-content p:first-child {
+    margin-bottom: 6px;
+    color: #ECD9FA;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* apparition : fondu + léger glissement depuis le logo */
+@keyframes hover-in {
+    from { opacity: 0; transform: translateY(4px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.hover-content[data-side="top"] {
+    animation-name: hover-in-top;
+}
+
+@keyframes hover-in-top {
+    from { opacity: 0; transform: translateY(-4px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hover-content { animation: none; }
+}
+
+.hover-card {
+    background-color: #301C3B;
+    border: 1px solid #664282;
+    color: #D19DFF;
+    max-height: 50px;
+    max-width: 50px;
+    padding: 8px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.hover-arrow {
+    fill: #54346B;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.skills-grid .hover-trigger {
+    width: 100%;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+}
+
+.skills-grid .hover-trigger:hover {
+    background-color: #3D224E;
+    border-color: #8457AA;
+}
+
+.skills-grid .hover-trigger img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;             /* le logo garde ses proportions */
+}
+
+/* écrans peu hauts (PC portables) : logos plus petits */
+@media (max-height: 860px) and (min-width: 801px) {
+    .skills-grid {
+        max-width: 230px;
+        gap: 6px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-height: 640px) and (min-width: 801px) {
+    .skills-grid {
+        max-width: 190px;
+    }
+}
